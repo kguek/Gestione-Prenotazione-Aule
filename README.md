@@ -12,6 +12,21 @@ e un'interfaccia grafica moderna.
 - **Persistenza Dati:** Salvataggio automatico (Autosave in background) e manuale su file system.
 - **Esportazione:** Possibilità di stampare la tabella delle occupazioni.
 
+## Test Automatici (Junit 5)
+Il progetto include una suite di test unitari automatizzati per garantire l'affidabilitá del codice:
+- **Validazione Logica:** Controllo preventivo delle sovrapposizioni di orario e dei vincoli specifici di ogni tipologia di aula.
+- **Operazioni CRUD.** Verifica del corretto funzionamento di aggiunta,modifica e cancellazione delle prenotazioni.
+- **Salvataggio Dati.** Test del salvataggio e caricamento su file system system utilizzando l'ambiente isolato (`@TempDir`) di JUnit, per garantire che i test non sporchino i file reali dell'utente.
+
+Per lanciare l'intera suite di test, usa il comando:
+```bash
+mvn test
+```
+Per lanciare un singolo file di test, usa il comando:
+```bash
+mvn test -Dtest="NOMEFILE_TEST"
+```
+
 ## Come eseguire il progetto 
 Questo progetto utilizza **Maven** per la gestione delle dipendenze e la compilazione.
 
