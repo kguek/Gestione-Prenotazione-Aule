@@ -1,3 +1,0 @@
-javac -d . $(find . -name "*.java")
-
-java App.Main

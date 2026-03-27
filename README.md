@@ -13,15 +13,17 @@ e un'interfaccia grafica moderna.
 - **Esportazione:** Possibilità di stampare la tabella delle occupazioni.
 
 ## Come eseguire il progetto 
-Il Progetto é progettato per essere compilato ed eseguito tramite riga di comando includendo le Librerie esterne necessarie.
+Questo progetto utilizza **Maven** per la gestione delle dipendenze e la compilazione.
+
+Assicurarsi di avere [Mavedn](https://maven.apache.org/) e JDK 17 (o superiore) installati sul tuo sistema.
 
 1. **Compilazione:**
    - **Su Linux/MacOS:**
      ```bash
 
-     javac -cp ".:lib/*" -d . $(find src -name "*.java")
+     mvn clenan compile
     
 2. **Esecuzione:**
    ```bash
-   java -cp ".:lib/*" App.Main
+   mvn exec:java -Dexec.mainClass="App.Main"
    ````

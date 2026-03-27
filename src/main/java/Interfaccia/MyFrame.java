@@ -53,7 +53,8 @@ public class MyFrame extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        aule = Utility.LoaderAule.loadAule("/home/kguek/DEV UNI/ProgettoEsame_Java/Esame/src/Utility/aule.txt");
+        aule = Utility.LoaderAule
+                .loadAule("/home/kguek/DEV UNI/ProgettoEsame_Java/Esame/src/main/java/Utility/aule.txt");
 
         // Pannello superiore: selezione data e operazioni
         JPanel topPanel = new JPanel(new BorderLayout());
