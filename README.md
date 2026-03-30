@@ -36,7 +36,7 @@ Assicurarsi di avere [Mavedn](https://maven.apache.org/) e JDK 17 (o superiore) 
    - **Su Linux/MacOS:**
      ```bash
 
-     mvn clenan compile
+     mvn clean compile
     
 2. **Esecuzione:**
    ```bash
